@@ -1,24 +1,84 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
  * {
     margin: 0;
     padding: 0;
  }
  body{
-    height: 780px;
+    height: 100%;
     background-color: #303030;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
  }
  .container{
     display: flex;
-    width: 1000px;
-    height: 780px;
-    border: 1px solid red;
+    width: 1236px;
+    height: 808px;
+    
  }
  .image-container{
-    border: 1px solid red;
+    position: relative;
+    width: 450px;
+    height: 808px;
  }
+ .logo-container{
+    width: 450px;
+    height: 150px;
+    background-color: #101010;
+    background-color: rgba(16, 16, 16, 0.5);
+    position: absolute;
+    top: 200px; 
+    left: 0; 
+}
+.logo-image{
+    
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    top: 15px;
+    left: 110px;
+}
+.logo-text{
+    font-family: "norsebold", serif;
+    color: white;
+    font-size: 90px;
+    position: absolute;
+    top: 25px;
+    left: 210px;
+}
+.caption{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 770px;
+    left: 108px;
+}
+a{
+    text-decoration: underline;
+    color: white;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.top-container{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    width: 786px;
+    height: 350px;
+    padding: 100px 60px 30px 20px ;
+}
+
+
  .form-container{
-    border: 1px solid red;
+    width: 786px;
+    height: 808px;
+    background-color: #D8D8D8;
+    
  }
