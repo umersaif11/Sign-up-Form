@@ -60,7 +60,7 @@
     top: 770px;
     left: 108px;
 }
-a{
+div.caption > a{
     text-decoration: underline;
     color: white;
     padding: 0;
@@ -113,6 +113,7 @@ a{
     height: 50px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 2px;
  }
  div > label{
@@ -126,16 +127,63 @@ a{
  input[type="email"],
  input[type="tel"],
  input[type="password"]{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding: 10px;
     height: 30px;
     width: 100%;
     border: 1px solid #D3D3D3;
     box-sizing: border-box;
     border-radius: 7px;
+    outline: none;
+ }
+ div[id='email-div'],
+ div[id='phone-number-div'],
+ div[id='password-div'],
+ div[id='confirm-password-div']{
+     margin-top: -60px;
+ }
+ input:focus{
+    border: 1px solid blue;
+    box-shadow: 3px 5px 5px #D3D3D3;
+ }
+ input[type='password']:invalid{
+    border: 1px solid red;
+ }
+ div[id='password-div']{
+    height: 75px;
+ }
+ input + span{
+    position: relative;
+ }
+ input:required + span::after{
+    content: '* Passwords do not match';
+    color: red;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 3px;
+ }
+ button[type="submit"] {
+    background-color: #556B2F;
+    color: white;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
 }
-div[id='email-div'],
-div[id='phone-number-div'],
-div[id='password-div'],
-div[id='confirm-password-div']{
-    margin-top: -60px;
+.account-already{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-left: 20px;
 }
- 
+.account-link{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: #556B2F;
+}
