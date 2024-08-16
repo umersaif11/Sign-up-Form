@@ -57,16 +57,18 @@
                 </div>
                 <div id="password-div">
                     <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="user-password">
+                    <input type="password" id="password" name="user-password" required>
+                    <span></span>
                 </div>
                 <div id="confirm-password-div">
                     <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-password" name="user-password-confirm">
+                    <input type="password" id="confirm-password" name="user-password-confirm" required>
                 </div>
 
             </form>
         </div>
-        <button type="submit" form="main-form"></button>
+        <button type="submit" form="main-form">Create Account</button>
+        <p class="account-already">Already have an account? <a href="https://www.google.com" class="account-link">Login</a></p>
     </div>
    </div> 
 </body>
